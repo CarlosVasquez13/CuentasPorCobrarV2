@@ -210,11 +210,11 @@
                 <label for="inputEmail4">Municipio</label>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button"
-                        id="dropdownMuniReferenciaMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        id="dropdownMunReferenciaMenuButton" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         Municipio
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMuniReferenciaMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMunReferenciaMenuButton">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Action</a>
@@ -226,11 +226,11 @@
                 <label for="inputEmail4">Departamento</label>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button"
-                        id="dropdownDepaReferenciaMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        id="dropdownDepReferenciaMenuButton" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         Departamento
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownDepaReferenciaMenuButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownDepReferenciaMenuButton">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Action</a>
@@ -292,11 +292,11 @@
             <div class="col-lg-4">
                 <label for="inputEmail4">Barrio o Colonia</label>
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuReferenciaButton"
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuReferenciaCButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Barrio/Colonia
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReferenciaButton">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReferenciaCButton">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
                         <a class="dropdown-item" href="#">Action</a>
