@@ -15,13 +15,13 @@ namespace CuentasPorCobrar
     {
 
         /// <summary>
-        /// primerNombre control.
+        /// primerNombreText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText primerNombre;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText primerNombreText;
 
         /// <summary>
         /// segundoNombreText control.

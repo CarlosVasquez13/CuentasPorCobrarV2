@@ -21,7 +21,8 @@ namespace CuentasPorCobrar
         private void PruebaConsulta()
         {
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
-            string query = "SELECT Id_Usuarios AS ID, CONCAT(P_Nombre, ' ', S_Nombre) AS Nombre, CONCAT(P_Apellido, ' ', S_Apellido) AS Apellido, Nombre_Usuario AS Usuario, Correo, Fecha_Creado AS 'Fecha Creado', Activo  FROM base_cuentas_cobrar.usuarios;";
+            string query = @"SELECT Id_Usuarios AS ID, CONCAT(P_Nombre, ' ', S_Nombre) AS Nombre, CONCAT(P_Apellido, ' ', S_Apellido) AS Apellido,
+                            Nombre_Usuario AS Usuario, Correo, Fecha_Creado AS 'Fecha Creado', Activo  FROM usuarios;";
             //conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             //conn.Open();
 

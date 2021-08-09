@@ -14,7 +14,7 @@ namespace CuentasPorCobrar
         }
         protected void btn_registroUsuario(object sender, EventArgs e)
         {
-            string primerNombre = primerApellidoText.Value;
+            string primerNombre = primerNombreText.Value;
             string segundoNombre = segundoApellidoText.Value;
             string primerApellido = primerApellidoText.Value;
             string segundoApellido = segundoApellidoText.Value;
