@@ -52,22 +52,16 @@
                 <input type="text" class="form-control" id="DescripcionTelText" runat="server"
                     placeholder="Ingrese descripcion acerca del Telefono" value="">
             </div>
+            <div class="w-100 mt-2" ></div>
+            <button type="submit" class="btn btn-outline-success" id="btnAgregarTelCliente" onserverclick=" btn_AgregarTelCliente" runat="server">Agregar otro Telefono</button>
+
 
             <div class="col-lg-4">
                 <label for="inputEmail4">Correo</label>
                 <input type="email" class="form-control" id="correoText" runat="server" placeholder="Correo electronico"
                     value="">
             </div>
-            <div class="col-lg-4">
-                <label for="inputPassword4">Contraseña</label>
-                <input type="password" class="form-control" id="passwordText" runat="server" placeholder="Contraseña"
-                    value="">
-            </div>
-            <div class="col-lg-4">
-                <label for="inputPassword4">Repetir contraseña</label>
-                <input type="password" class="form-control" id="repeatPasswordText" runat="server"
-                    placeholder="Contraseña" value="">
-            </div>
+            
             <div class="col-lg-4">
                 <label for="inputEmail4">DNI</label>
                 <input type="text" class="form-control" id="DNIText" runat="server" placeholder="Ingrese DNI" value="">
@@ -180,16 +174,7 @@
                 <input type="email" class="form-control" id="correoReferenciaText" runat="server"
                     placeholder="Correo electronico" value="">
             </div>
-            <div class="col-lg-4">
-                <label for="inputPassword4">Contraseña</label>
-                <input type="password" class="form-control" id="passwordReferenciaText" runat="server"
-                    placeholder="Contraseña" value="">
-            </div>
-            <div class="col-lg-4">
-                <label for="inputPassword4">Repetir contraseña</label>
-                <input type="password" class="form-control" id="repeatPasswordReferenciaText" runat="server"
-                    placeholder="Contraseña" value="">
-            </div>
+          
             <div class="col-lg-4">
                 <label for="inputEmail4">DNI</label>
                 <input type="text" class="form-control" id="DNIReferenciaText" runat="server" placeholder="Ingrese DNI"
@@ -274,7 +259,7 @@
                     placeholder="Ingrese descripcion acerca del Telefono" value="">
             </div>
             <div class="w-100 mt-2" ></div>
-            <button type="button" class="btn btn-primary">Agregar otro Telefono</button>
+            <button type="submit" class="btn btn-outline-success" id="btnAgregarTelReferencia" onserverclick=" btn_AgregarTelReferencia" runat="server">Agregar otro Telefono</button>
 
         </div>
 
@@ -355,7 +340,7 @@
         <div class="w-100"></div>
 
         <div class="row mt-2">
-            <button type="button" class="btn btn-primary">Guardar</button>
+            <button type="submit" class="btn btn-primary" id="btnGuardarRegCliente" onserverclick=" btn_GuardarRegCliente" runat="server">Guardar</button>
         </div>
 
 
