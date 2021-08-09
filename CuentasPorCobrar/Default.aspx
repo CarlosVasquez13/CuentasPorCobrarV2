@@ -38,5 +38,9 @@
             </p>
         </div>
     </div>
+    <div style="border: 2px solid red;">
+    <asp:GridView ID="GridUsuarios1" runat="server"></asp:GridView>
+
+    </div>
 
 </asp:Content>

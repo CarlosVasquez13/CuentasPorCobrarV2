@@ -164,6 +164,7 @@
     <Content Include="favicon.ico" />
     <Content Include="FormatoAUsar.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="MostrarUsuarios.aspx" />
     <Content Include="Prueba.aspx" />
     <Content Include="RegistroData.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -341,6 +342,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarUsuarios.aspx.cs">
+      <DependentUpon>MostrarUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarUsuarios.aspx.designer.cs">
+      <DependentUpon>MostrarUsuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prueba.aspx.cs">

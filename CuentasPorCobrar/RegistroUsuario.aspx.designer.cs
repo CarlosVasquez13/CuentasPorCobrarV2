@@ -60,6 +60,15 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correoText;
 
         /// <summary>
+        /// nombreUsuarioText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText nombreUsuarioText;
+
+        /// <summary>
         /// passwordText control.
         /// </summary>
         /// <remarks>

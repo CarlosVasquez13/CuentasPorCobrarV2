@@ -9,24 +9,19 @@ using System.Web.UI.WebControls;
 
 namespace CuentasPorCobrar
 {
-    public partial class _Default : Page
+    public partial class MostrarUsuarios : System.Web.UI.Page
     {
-        MySql.Data.MySqlClient.MySqlConnection conn;
-        MySql.Data.MySqlClient.MySqlCommand cmd;
-        MySql.Data.MySqlClient.MySqlDataReader reader;
-
-        string query = "";
-
         protected void Page_Load(object sender, EventArgs e)
         {
-
             PruebaConsulta();
+
         }
+
 
         private void PruebaConsulta()
         {
             string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
-            query = "SELECT Id_Usuarios, P_Nombre, P_Apellido, Nombre_Usuario, Correo, Fecha_Creado, Activo  FROM base_cuentas_cobrar.usuarios;";
+            string query = "SELECT Id_Usuarios AS ID, CONCAT(P_Nombre, ' ', S_Nombre) AS Nombre, CONCAT(P_Apellido, ' ', S_Apellido) AS Apellido, Nombre_Usuario AS Usuario, Correo, Fecha_Creado AS 'Fecha Creado', Activo  FROM base_cuentas_cobrar.usuarios;";
             //conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
             //conn.Open();
 
@@ -41,13 +36,8 @@ namespace CuentasPorCobrar
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();
             da.Fill(dt);
-            GridUsuarios1.DataSource = dt;
-            GridUsuarios1.DataBind();
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            PruebaConsulta();
+            GridUsuarios.DataSource = dt;
+            GridUsuarios.DataBind();
         }
     }
 }
