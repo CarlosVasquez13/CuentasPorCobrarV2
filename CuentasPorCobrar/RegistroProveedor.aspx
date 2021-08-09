@@ -117,35 +117,35 @@
 
     </div>
 
-    <!-- Tabla Perteneciente a Telefono -->
-        <!-- Seria bueno que este apartado de telefono se guarde por aparte, por si se quiere agregar otro telefono -->
-        <div class="row">
+            <!-- Tabla Perteneciente a Telefono -->
+            <!-- Seria bueno que este apartado de telefono se guarde por aparte, por si se quiere agregar otro telefono -->
+            <div class="row">
 
-            <div class="col-lg-4">
-                <label for="inputEmail4">Id Telefono</label>
-                <input type="number" class="form-control" id="IdTelefonoPnum" runat="server"
-                    placeholder="Ingrese Id Telefono" value="">
-            </div>
-            <div class="col-lg-4">
-                <label for="inputEmail4">Numero Telefonico Empresa</label>
-                <input type="text" class="form-control" id="numeroTelPText" runat="server"
-                    placeholder="Ingrese numero Telefonico" value="">
-            </div>
-            <div class="col-lg-4">
-                <label for="inputEmail4">descripcion del Telefono</label>
-                <input type="text" class="form-control" id="DescripcionPTelText" runat="server"
-                    placeholder="Ingrese descripcion acerca del Telefono" value="">
-            </div>
-             <div class="w-100 m-2"></div> 
-            <button type="button" class="btn btn-outline-success">Agregar otro telefono</button>
-            
+                <div class="col-lg-4">
+                    <label for="inputEmail4">Id Telefono</label>
+                    <input type="number" class="form-control" id="IdTelefonoPnum" runat="server"
+                        placeholder="Ingrese Id Telefono" value="">
+                </div>
+                <div class="col-lg-4">
+                    <label for="inputEmail4">Numero Telefonico Empresa</label>
+                    <input type="text" class="form-control" id="numeroTelPText" runat="server"
+                        placeholder="Ingrese numero Telefonico" value="">
+                </div>
+                <div class="col-lg-4">
+                    <label for="inputEmail4">descripcion del Telefono</label>
+                    <input type="text" class="form-control" id="DescripcionPTelText" runat="server"
+                        placeholder="Ingrese descripcion acerca del Telefono" value="">
+                </div>
+                <div class="w-100 m-2"></div>
+                <button type="button" class="btn btn-outline-success">Agregar otro telefono</button>
 
-        </div>
 
-            <div class="w-100 m-2"></div> 
+            </div>
+
+            <div class="w-100 m-2"></div>
 
             <button type="button" class="btn btn-primary">Guardar </button>
-</div>
+        </div>
 
 
 
