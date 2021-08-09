@@ -33,16 +33,16 @@ namespace CuentasPorCobrar
 
             //cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
 
-            MySqlConnection con = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand(query);
+            //MySqlConnection con = new MySqlConnection(connectionString);
+            //MySqlCommand cmd = new MySqlCommand(query);
 
-            MySqlDataAdapter da = new MySqlDataAdapter();
-            cmd.Connection = con;
-            da.SelectCommand = cmd;
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            GridUsuarios1.DataSource = dt;
-            GridUsuarios1.DataBind();
+            //MySqlDataAdapter da = new MySqlDataAdapter();
+            //cmd.Connection = con;
+            //da.SelectCommand = cmd;
+            //DataTable dt = new DataTable();
+            //da.Fill(dt);
+            //GridUsuarios1.DataSource = dt;
+            //GridUsuarios1.DataBind();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
