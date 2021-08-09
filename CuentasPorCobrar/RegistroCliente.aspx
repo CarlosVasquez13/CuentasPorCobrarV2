@@ -245,17 +245,17 @@
 
             <div class="col-lg-4">
                 <label for="inputEmail4">Id Telefono</label>
-                <input type="number" class="form-control" id="Number2" runat="server"
+                <input type="number" class="form-control" id="IdTelefonoRef" runat="server"
                     placeholder="Ingrese Id Telefono" value="">
             </div>
             <div class="col-lg-4">
                 <label for="inputEmail4">Numero Telefonico</label>
-                <input type="text" class="form-control" id="Text1" runat="server"
+                <input type="text" class="form-control" id="NumeroTelefonoRef" runat="server"
                     placeholder="Ingrese numero Telefonico" value="">
             </div>
             <div class="col-lg-4">
                 <label for="inputEmail4">descripcion del Telefono</label>
-                <input type="text" class="form-control" id="Text2" runat="server"
+                <input type="text" class="form-control" id="DescripcionTelefonoRef" runat="server"
                     placeholder="Ingrese descripcion acerca del Telefono" value="">
             </div>
             <div class="w-100 mt-2" ></div>
@@ -339,9 +339,9 @@
         </div>
         <div class="w-100"></div>
 
-        <div class="row mt-2">
+        <%--<div class="row mt-2">
             <button type="submit" class="btn btn-primary" id="btnGuardarRegCliente" onserverclick=" btn_GuardarRegCliente" runat="server">Guardar</button>
-        </div>
+        </div>--%>
 
 
     </div>
