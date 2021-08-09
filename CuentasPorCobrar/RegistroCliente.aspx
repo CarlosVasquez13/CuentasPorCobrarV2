@@ -1,6 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RegistroCliente.aspx.cs" Inherits="CuentasPorCobrar.RegistroCliente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <main>
+
+
+    
     <div class="container">
 
         <h1>Registra Cliente</h1>
@@ -77,6 +81,22 @@
                 <input type="text" class="form-control" id="PasaporteText" runat="server"
                     placeholder="Ingrese Pasaporte" value="">
             </div>
+
+            <div class="w-100"></div>
+            
+            <div class="col-lg-4">
+                <label for="inputEmail4">Numero de Casa</label>
+                <input type="number" class="form-control" id="numCasaNum" runat="server"
+                    placeholder="Ingrese numero de Casa" value="">
+            </div>
+            <div class="col-lg-4">
+                <label for="inputEmail4">Detalles de Direccion</label>
+                <input type="text" class="form-control" id="DetaDireccionText" runat="server"
+                    placeholder="Ingrese una descripion de Direccion" value="">
+            </div>
+
+            <div class="w-100"></div>
+
             <div class="col-lg-4">
                 <label for="inputEmail4">Barrio o Colonia</label>
                 <div class="dropdown">
@@ -90,16 +110,6 @@
                         <a class="dropdown-item" href="#">Action</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <label for="inputEmail4">Numero de Casa</label>
-                <input type="number" class="form-control" id="numCasaNum" runat="server"
-                    placeholder="Ingrese numero de Casa" value="">
-            </div>
-            <div class="col-lg-4">
-                <label for="inputEmail4">Detalles de Direccion</label>
-                <input type="text" class="form-control" id="DetaDireccionText" runat="server"
-                    placeholder="Ingrese una descripion de Direccion" value="">
             </div>
 
             <div class="col-lg-4">
@@ -134,8 +144,9 @@
         </div>
 
         <!-- Referencia Personal -->
+        <h2> Referencia Personal</h2>
         <div class="row">
-            <h3> Referencia Personal</h3>
+            
             <div class="col-lg-4">
                 <label for="inputEmail4">Id Referencia Personal</label>
                 <input type="number" class="form-control" name="IdReferenciaNum" id="IdReferenciaNum" runat="server"
@@ -186,6 +197,14 @@
             </div>
 
             <div class="col-lg-4">
+                <label for="inputEmail4">Numero de Casa</label>
+                <input type="number" class="form-control" id="Number1" runat="server"
+                    placeholder="Ingrese numero de Casa" value="">
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col-lg-4">
                 <label for="inputEmail4">Barrio o Colonia</label>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuReferenciaButton"
@@ -199,12 +218,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <label for="inputEmail4">Numero de Casa</label>
-                <input type="number" class="form-control" id="Number1" runat="server"
-                    placeholder="Ingrese numero de Casa" value="">
-            </div>
-
 
             <div class="col-lg-4">
                 <label for="inputEmail4">Municipio</label>
@@ -260,13 +273,14 @@
                 <input type="text" class="form-control" id="Text2" runat="server"
                     placeholder="Ingrese descripcion acerca del Telefono" value="">
             </div>
-            <button type="button" class="btn btn-primary">Primary</button>
+            <div class="w-100 mt-2" ></div>
+            <button type="button" class="btn btn-primary">Agregar otro Telefono</button>
 
         </div>
 
-
+        <h2> Datos Laborales</h2>
         <div class="row">
-            <h3> Datos Laborales</h3>
+            
             <div class="col-lg-4">
                 <label for="inputEmail4">Id Trabajo del Cliente</label>
                 <input type="number" class="form-control" name="IdReferenciaNum" id="IdTrabajoNum" runat="server"
@@ -338,14 +352,15 @@
 
 
         </div>
+        <div class="w-100"></div>
 
-        <div class="row">
-            <button type="button" class="btn btn-primary">Primary</button>
+        <div class="row mt-2">
+            <button type="button" class="btn btn-primary">Guardar</button>
         </div>
 
 
     </div>
-
+    </main>
 
     
 </asp:Content>
