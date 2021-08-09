@@ -164,6 +164,7 @@
     <Content Include="favicon.ico" />
     <Content Include="FormatoAUsar.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="MostrarUbicacion.aspx" />
     <Content Include="MostrarUsuarios.aspx" />
     <Content Include="Prueba.aspx" />
     <Content Include="RegistroData.aspx" />
@@ -342,6 +343,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarUbicacion.aspx.cs">
+      <DependentUpon>MostrarUbicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarUbicacion.aspx.designer.cs">
+      <DependentUpon>MostrarUbicacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="MostrarUsuarios.aspx.cs">
       <DependentUpon>MostrarUsuarios.aspx</DependentUpon>
