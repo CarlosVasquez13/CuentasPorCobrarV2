@@ -87,6 +87,15 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputText DescripcionTelText;
 
         /// <summary>
+        /// Control btnAgregarTelCliente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnAgregarTelCliente;
+
+        /// <summary>
         /// Control correoText.
         /// </summary>
         /// <remarks>
@@ -94,24 +103,6 @@ namespace CuentasPorCobrar
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correoText;
-
-        /// <summary>
-        /// Control passwordText.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword passwordText;
-
-        /// <summary>
-        /// Control repeatPasswordText.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword repeatPasswordText;
 
         /// <summary>
         /// Control DNIText.
@@ -213,24 +204,6 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correoReferenciaText;
 
         /// <summary>
-        /// Control passwordReferenciaText.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword passwordReferenciaText;
-
-        /// <summary>
-        /// Control repeatPasswordReferenciaText.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword repeatPasswordReferenciaText;
-
-        /// <summary>
         /// Control DNIReferenciaText.
         /// </summary>
         /// <remarks>
@@ -276,6 +249,15 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputText Text2;
 
         /// <summary>
+        /// Control btnAgregarTelReferencia.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnAgregarTelReferencia;
+
+        /// <summary>
         /// Control IdTrabajoNum.
         /// </summary>
         /// <remarks>
@@ -310,5 +292,14 @@ namespace CuentasPorCobrar
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText IdClienteTrabajoText;
+
+        /// <summary>
+        /// Control btnGuardarRegCliente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnGuardarRegCliente;
     }
 }
