@@ -65,7 +65,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="RegistroUsuario">Crear usuario</a>
-          <a class="dropdown-item" href="Prueba">Another action</a>
+          <a class="dropdown-item" href="Prueba"></a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="MostrarUsuarios">Mostrar</a>
         </div>
@@ -88,9 +88,9 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="RegistroProveedor">Registrar</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#"></a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">0</a>
         </div>
       </li> 
         <li class="nav-item dropdown">
@@ -100,9 +100,9 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="RegistroProveedor">Registrar Factuar</a>
           <a class="dropdown-item" href="#">Reporte Cuentas</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#"></a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">0</a>
         </div>
       </li>
     </ul>
@@ -113,7 +113,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Cuentas Por Cobrar</p>
             </footer>
         </div>
 

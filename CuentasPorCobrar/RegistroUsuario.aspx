@@ -7,7 +7,7 @@
 
             <div class="col-lg-4">
                 <label for="inputEmail4">Primer Nombre</label>
-                <input type="text" class="form-control" name="primerNombre" id="primerNombre" runat="server" placeholder="Primer Nombre" value="">
+                <input type="text" class="form-control" name="primerNombre" id="primerNombreText" runat="server" placeholder="Primer Nombre" value="">
             </div>
             <div class="col-lg-4">
                 <label for="inputEmail4">Segundo Nombre</label>
