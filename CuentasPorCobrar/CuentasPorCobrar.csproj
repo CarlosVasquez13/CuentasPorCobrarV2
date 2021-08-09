@@ -161,9 +161,11 @@
     <Content Include="Content\sidebar.estilos.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="EditarUsuario.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="FormatoAUsar.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="MostrarUbicacion.aspx" />
     <Content Include="MostrarUsuarios.aspx" />
     <Content Include="Prueba.aspx" />
     <Content Include="RegistroData.aspx" />
@@ -326,6 +328,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditarUsuario.aspx.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditarUsuario.aspx.designer.cs">
+      <DependentUpon>EditarUsuario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormatoAUsar.aspx.cs">
       <DependentUpon>FormatoAUsar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -342,6 +351,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarUbicacion.aspx.cs">
+      <DependentUpon>MostrarUbicacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostrarUbicacion.aspx.designer.cs">
+      <DependentUpon>MostrarUbicacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="MostrarUsuarios.aspx.cs">
       <DependentUpon>MostrarUsuarios.aspx</DependentUpon>
