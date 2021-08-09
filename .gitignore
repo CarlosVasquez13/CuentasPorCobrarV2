@@ -28,6 +28,9 @@ obj/
 CuentasPorCobrar/bin/
 CuentasPorCobrar/obj/
 TestResults/
+Visual Studio 2019/
+Visual Studio 2019Templates/
+CuentasPorCobrar/Web.config
 ###################
 # Web publish log #
 ###################
