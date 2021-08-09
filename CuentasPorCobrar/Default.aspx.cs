@@ -9,9 +9,9 @@ namespace CuentasPorCobrar
 {
     public partial class _Default : Page
     {
-        //MySql.Data.MySqlClient.MySqlConnection conn;
-        //MySql.Data.MySqlClient.MySqlCommand cmd;
-        //MySql.Data.MySqlClient.MySqlDataReader reader;
+        MySql.Data.MySqlClient.MySqlConnection conn;
+        MySql.Data.MySqlClient.MySqlCommand cmd;
+        MySql.Data.MySqlClient.MySqlDataReader reader;
 
         string query = "";
 
@@ -22,17 +22,17 @@ namespace CuentasPorCobrar
 
         private void PruebaConsulta()
         {
-            //string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["myConnection"].ToString();
-            //conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            //conn.Open();
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["myConnection"].ToString();
+            conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            conn.Open();
 
-            //query = "SELECT * FROM cliente LIMIT 1;";
+            query = "SELECT * FROM cliente LIMIT 1;";
 
-            //cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+            cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
 
-            //reader = cmd.ExecuteReader();
+            reader = cmd.ExecuteReader();
 
-            //conn.Close();
+            conn.Close();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -40,5 +40,4 @@ namespace CuentasPorCobrar
             PruebaConsulta();
         }
     }
-}
 }
