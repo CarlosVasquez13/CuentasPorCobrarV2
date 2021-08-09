@@ -165,6 +165,7 @@
     <Content Include="FormatoAUsar.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Prueba.aspx" />
+    <Content Include="RegistroData.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -369,6 +370,13 @@
     </Compile>
     <Compile Include="RegistroCuenta.aspx.designer.cs">
       <DependentUpon>RegistroCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroData.aspx.cs">
+      <DependentUpon>RegistroData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroData.aspx.designer.cs">
+      <DependentUpon>RegistroData.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegistroProveedor.aspx.cs">
       <DependentUpon>RegistroProveedor.aspx</DependentUpon>
