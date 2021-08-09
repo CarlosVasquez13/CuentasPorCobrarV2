@@ -35,6 +35,7 @@
                 <input type="text" class="form-control" id="segundoApellidoClienteText" runat="server"
                     placeholder="Ingrese Segundo Apellido" value="">
             </div>
+            <div class="w-100 mt-2" ></div>
 
             <!-- Tabla Perteneciente a Telefono -->
             <div class="col-lg-4">
