@@ -12,7 +12,7 @@
 
             <div class="col-lg-4">
                 <label for="inputEmail4">Id Cliente</label>
-                <input type="number" class="form-control" name="IdCliente" id="IdClientenum" runat="server"
+                <input type="number" class="form-control" name="IdClientenum" id="IdClientenum" runat="server"
                     placeholder="Ingrese Id Cliente" value="">
             </div>
             <div class="col-lg-4">
@@ -26,7 +26,7 @@
                     placeholder="Segundo Nombre" value="">
             </div>
             <div class="col-lg-4">
-                <label for="inputEmail4">Segundo Apellido</label>
+                <label for="inputEmail4">Primer Apellido</label>
                 <input type="text" class="form-control" id="primerApellidoClienteText" runat="server"
                     placeholder="Ingrese Primer Apellido" value="">
             </div>
@@ -35,7 +35,7 @@
                 <input type="text" class="form-control" id="segundoApellidoClienteText" runat="server"
                     placeholder="Ingrese Segundo Apellido" value="">
             </div>
-            <div class="w-100 mt-2" ></div>
+            <div class="w-100 mt-2"></div>
 
             <!-- Tabla Perteneciente a Telefono -->
             <div class="col-lg-4">
@@ -53,16 +53,16 @@
                 <input type="text" class="form-control" id="DescripcionTelText" runat="server"
                     placeholder="Ingrese descripcion acerca del Telefono" value="">
             </div>
-            <div class="w-100 mt-2" ></div>
+            <div class="w-100 mt-2"></div>
             <button type="submit" class="btn btn-outline-success" id="btnAgregarTelCliente" onserverclick=" btn_AgregarTelCliente" runat="server">Agregar otro Telefono</button>
-            <div class="w-100 mt-2" ></div>
+            <div class="w-100 mt-2"></div>
 
             <div class="col-lg-4">
                 <label for="inputEmail4">Correo</label>
                 <input type="email" class="form-control" id="correoText" runat="server" placeholder="Correo electronico"
                     value="">
             </div>
-            
+
             <div class="col-lg-4">
                 <label for="inputEmail4">DNI</label>
                 <input type="text" class="form-control" id="DNIText" runat="server" placeholder="Ingrese DNI" value="">
@@ -78,7 +78,7 @@
             </div>
 
             <div class="w-100"></div>
-            
+
             <div class="col-lg-4">
                 <label for="inputEmail4">Numero de Casa</label>
                 <input type="number" class="form-control" id="numCasaNum" runat="server"
@@ -136,6 +136,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Referencia Personal -->
@@ -237,6 +238,11 @@
                 </div>
             </div>
 
+            <div class="w-100"></div>
+        <div class="row mt-2">
+            <button type="submit" class="btn btn-primary" id="Button1" onserverclick=" btn_GuardarRegCliente" runat="server">Guardar</button>
+        </div>
+        <div class="w-100"></div>
         </div>
 
         <!-- Tabla Perteneciente a Telefono -->
@@ -336,13 +342,14 @@
                 </div>
             </div>
 
+            <%--<div class="w-100"></div>
+        <div class="row mt-2">
+            <button type="submit" class="btn btn-primary" id="btnGuardarRegReferencia" onserverclick=" btn_GuardarRegReferencia" runat="server">Guardar</button>
+        </div>
+        <div class="w-100"></div>--%>
 
         </div>
-        <div class="w-100"></div>
-
-        <%--<div class="row mt-2">
-            <button type="submit" class="btn btn-primary" id="btnGuardarRegCliente" onserverclick=" btn_GuardarRegCliente" runat="server">Guardar</button>
-        </div>--%>
+        
 
 
     </div>
