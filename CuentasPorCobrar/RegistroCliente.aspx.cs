@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+
+
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Web;
+//using System.Web.UI;
+//using System.Web.UI.WebControls;
 
 namespace CuentasPorCobrar
 {
@@ -49,7 +51,7 @@ namespace CuentasPorCobrar
             {
                 Console.WriteLine(ex.ToString());
             }
-
+          ;
 
         }
 
@@ -83,13 +85,53 @@ namespace CuentasPorCobrar
             {
                 Console.WriteLine(ex.ToString());
             }
-
+          ;
 
         }
 
         protected void btn_GuardarRegCliente(object sender, EventArgs e)
         {
-            
+            string IdClient = IdClientenum.Value;
+            string PNombreC = primerNombreClienteText.Value;
+            string SNombreC = segundoNombreClienteText.Value;
+            string PApellidoC = primerApellidoClienteText.Value;
+            string SApellidoC = segundoApellidoClienteText.Value;
+            string CorreoC = correoText.Value;
+            string DNIC = DNIText.Value;
+            string RTNC = RTNText.Value;
+            string PasaporteC = PasaporteText.Value;
+            string NumCasaC = numCasaNum.Value;
+            string DetDirecionC = DetaDireccionText.Value;
+
+            try
+            {
+                string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
+                conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+                conn.Open();
+
+                query = @"INSERT INTO cliente(Id_Cliente, P_Nombre, S_Nombre, P_Apellido, S_Apellido, 
+                    Correo, DNI, RTN, Pasaporte, Barrio/Colonia_Id, Num_Casa, Detalle_Direccion, 
+                    Id_Municipio, Departamento_Id)
+                    VALUES('" + IdClient + "','" + PNombreC + "','" + SNombreC + "','" + PApellidoC 
+                    + "','" + SApellidoC + "','" + CorreoC + "','" + DNIC + "' ,'" + RTNC
+                    + "','" + PasaporteC + "','" + null + "','" + NumCasaC + "','" + DetDirecionC 
+                    + "' ,'" + null + "' ,'" + null + "');";
+
+                cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+                var result = cmd.ExecuteNonQuery();
+
+                //si result == 1 se resgitro el usuario, falla cuando es 0
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.ToString());
+            }
+           ;
+
+
         }
 
     }
