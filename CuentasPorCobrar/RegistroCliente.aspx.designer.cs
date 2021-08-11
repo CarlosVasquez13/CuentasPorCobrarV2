@@ -150,6 +150,42 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputText DetaDireccionText;
 
         /// <summary>
+        /// Control IdTrabajoNum.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl IdTrabajoNum;
+
+        /// <summary>
+        /// Control primerNombreEmpresaCText.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText primerNombreEmpresaCText;
+
+        /// <summary>
+        /// Control cargoText.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText cargoText;
+
+        /// <summary>
+        /// Control IdClienteTrabajoText.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText IdClienteTrabajoText;
+
+        /// <summary>
         /// Control IdReferenciaNum.
         /// </summary>
         /// <remarks>
@@ -222,13 +258,22 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Number1;
 
         /// <summary>
-        /// Control Button1.
+        /// Control Prueba.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlButton Button1;
+        protected global::System.Web.UI.WebControls.Label Prueba;
+
+        /// <summary>
+        /// Control DropDownList1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
         /// Control IdTelefonoRef.
@@ -267,39 +312,12 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlButton btnAgregarTelReferencia;
 
         /// <summary>
-        /// Control IdTrabajoNum.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl IdTrabajoNum;
-
-        /// <summary>
-        /// Control primerNombreEmpresaCText.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText primerNombreEmpresaCText;
-
-        /// <summary>
-        /// Control cargoText.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText cargoText;
-
-        /// <summary>
-        /// Control IdClienteTrabajoText.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText IdClienteTrabajoText;
+        protected global::System.Web.UI.HtmlControls.HtmlButton Button1;
     }
 }
