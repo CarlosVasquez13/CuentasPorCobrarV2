@@ -146,12 +146,12 @@
             
             <div class="col-lg-4">
                 <label for="inputEmail4">Id Trabajo del Cliente</label>
-                <input type="number" class="form-control" name="IdReferenciaNum" id="IdTrabajoNum" runat="server"
+                <input type="number" class="form-control" name="IdTrabajoNum" id="IdTrabajoNum" runat="server"
                     placeholder="Ingrese Id Trabajo" value="">
             </div>
             <div class="col-lg-4">
                 <label for="exampleInputNombreEmpresa">Nombre de la Empresa</label>
-                <input type="text" class="form-control" id="primerNombreEmpresaCText" runat="server"
+                <input type="text" class="form-control" id="NombreEmpresaCText" runat="server"
                     placeholder="Ingrese Nombre de Empresa" value="">
             </div>
             <div class="col-lg-4">
@@ -165,7 +165,7 @@
                 <input type="text" class="form-control" id="IdClienteTrabajoText" runat="server"
                     placeholder="Ingrese Id" value="">
             </div>
-
+            
             <div class="col-lg-4">
                 <label for="inputEmail4">Barrio o Colonia</label>
                 <div class="dropdown">
@@ -268,7 +268,7 @@
 
             <div class="col-lg-4">
                 <label for="inputEmail4">Numero de Casa</label>
-                <input type="number" class="form-control" id="Number1" runat="server"
+                <input type="number" class="form-control" id="NumCasa" runat="server"
                     placeholder="Ingrese numero de Casa" value="">
             </div>
 
