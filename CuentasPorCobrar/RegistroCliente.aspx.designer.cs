@@ -159,13 +159,13 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl IdTrabajoNum;
 
         /// <summary>
-        /// Control primerNombreEmpresaCText.
+        /// Control NombreEmpresaCText.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText primerNombreEmpresaCText;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText NombreEmpresaCText;
 
         /// <summary>
         /// Control cargoText.
@@ -249,13 +249,13 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputText DNIReferenciaText;
 
         /// <summary>
-        /// Control Number1.
+        /// Control NumCasa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl Number1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl NumCasa;
 
         /// <summary>
         /// Control Prueba.
