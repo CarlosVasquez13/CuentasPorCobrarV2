@@ -69,6 +69,15 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputText DepartamentoText;
 
         /// <summary>
+        /// Control ListaPais.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ListaPais;
+
+        /// <summary>
         /// Control IdMunisnum.
         /// </summary>
         /// <remarks>
