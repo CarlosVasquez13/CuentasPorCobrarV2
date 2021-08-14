@@ -52,7 +52,7 @@
         <div class="row ">
 
             <div class="w-100 "></div> 
-            <h3>Registro de estado de Cuenta</h3>
+            <h3>Registro Departamentos</h3>
             <div class="w-100 "></div> 
 
             <div class="col-lg-4">
@@ -68,11 +68,12 @@
            
             <div class="col-lg-4">
                 <label for="inputEmail4">Seleccione Pais </label>
+                <asp:DropDownList ID="ListaPais" runat="server" AutoPostBack="True"></asp:DropDownList>
+                <div class="w-100 mt-2 "></div>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSelPaisPMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Seleccione Pais                                                                               
-                    </button>
+                        Seleccione Pais</button>
                     <div class="dropdown-menu" aria-labelledby="dropdownSelPaisPMenuButton">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
