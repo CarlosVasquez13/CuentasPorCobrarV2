@@ -1,11 +1,12 @@
 ﻿using System;
 
 
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Web;
+//using System.Web.UI;
+//using System.Web.UI.WebControls;
+
 
 namespace CuentasPorCobrar
 {
@@ -135,7 +136,6 @@ namespace CuentasPorCobrar
                     + "' ,'" + null + "' ,'" + null + "');";
 
                 query = @"INSERT INTO trabajo_cliente(Id_Trabajo_Cliente, Nombre_Empresa, cargo, Id_Cliente, Id_Barrio/Colonia, 
-                 
                     Id_Municipio, Departamento_Id)
                     VALUES('" + IdTrabajo + "','" + NEmpresa + "','" + cargo + "','" + null
                     + "','" + null + "','" + null  + "');";
@@ -144,8 +144,7 @@ namespace CuentasPorCobrar
                     Correo, DNI, Barrio/Colonia_Id, Id_Municipio, Departamento_Id,Num_Casa)
                     VALUES('" + idReferenciaP + "','" + PnombreR + "','" + SnombreR + "','" + PapellidoR
                     + "','" + SapellidoR + "','" + correoR + "','" + DNIC + "' ,'" + null
-                    + "','" + null + "','" + null + "','" + NumCasa + "','" + DetDirecionC
-                    + "' ,'" + null + "' ,'" + null + "');";
+                    + "','" + null + "','" + null + "','" + NumCasa + "');";
 
                 cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
                 var result = cmd.ExecuteNonQuery();
