@@ -21,21 +21,27 @@
                 <label for="inputEmail4">Segundo Apellido</label>
                 <input type="text" class="form-control" id="segundoApellidoText" runat="server" placeholder="Segundo Apellido" value="">
             </div>
+             <div class="col-lg-4">
+                <label for="nombreUsuarioText">Nombre Usuario</label>
+                <input type="text" class="form-control" id="nombreUsuarioText" runat="server" placeholder="Nombre Usuario" value="">
+            </div>
             <div class="col-lg-4">
                 <label for="inputEmail4">Email</label>
                 <input type="email" class="form-control" id="correoText" runat="server" placeholder="Email" value="">
             </div>
             <div class="col-lg-4">
-                <label for="nombreUsuarioText">Nombre Usuario</label>
-                <input type="text" class="form-control" id="nombreUsuarioText" runat="server" placeholder="Nombre Usuario" value="">
-            </div><div class="col-lg-4">
+                <label for="telefono">Telefono</label>
+                <input type="text" class="form-control" id="telefonoText" runat="server" placeholder="Telefono" value="">
+            </div>
+           
+            <div class="col-lg-4">
                 <label for="inputPassword4">Contraseña</label>
                 <input type="password" class="form-control" id="passwordText" runat="server" placeholder="Contraseña" value="">
             </div>
-            <div class="col-lg-4">
+            <%--<div class="col-lg-4">
                 <label for="inputPassword4">Repetir contraseña</label>
                 <input type="password" class="form-control" id="repeatPasswordText" runat="server" placeholder="Contraseña" value="">
-            </div>
+            </div>--%>
   <%--          <div class="col-lg-4">
                 <label for="inputState">State</label>
                 <select id="inputState" class="form-control">

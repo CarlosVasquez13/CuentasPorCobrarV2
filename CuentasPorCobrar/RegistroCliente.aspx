@@ -38,6 +38,7 @@
             </div>
             <div class="w-100 mt-2"></div>
 
+            <hr />
             <!-- Tabla Perteneciente a Telefono -->
             <div class="col-lg-4">
                 <label for="inputEmail4">Id Telefono</label>
@@ -288,7 +289,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-lg-4">
                 <label for="inputEmail4">Municipio</label>
                 <div class="dropdown">

@@ -24,8 +24,9 @@ namespace CuentasPorCobrar
             DataTable dt = Funciones.GetTable(query, 1);
 
             GridUsuarios.DataSource = dt;
-            GridUsuarios.DataBind();
-
+            GridUsuarios.DataBind();        
+            //Prueba de como acutalizar uno o varios campos de una entidad
+            //Funciones.UpdateData("Agente", "P_Nombre = 'Prueba UPdate' ", " Id_Agente = 5");
         }
 
         private void PruebaConsulta()

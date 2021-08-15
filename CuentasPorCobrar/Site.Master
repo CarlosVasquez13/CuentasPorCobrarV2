@@ -61,11 +61,11 @@
       </li>--%>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Usuarios
+          Agentes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="RegistroUsuario">Crear usuario</a>
-          <a class="dropdown-item" href="Prueba"></a>
+          <a class="dropdown-item" href="RegistroUsuario">Crear Agente</a>
+          <a class="dropdown-item" href="PermisosPorAgente">Permisos</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="MostrarUsuarios">Mostrar</a>
         </div>

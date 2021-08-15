@@ -51,15 +51,6 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputText segundoApellidoText;
 
         /// <summary>
-        /// correoText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correoText;
-
-        /// <summary>
         /// nombreUsuarioText control.
         /// </summary>
         /// <remarks>
@@ -69,6 +60,24 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.HtmlControls.HtmlInputText nombreUsuarioText;
 
         /// <summary>
+        /// correoText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl correoText;
+
+        /// <summary>
+        /// telefonoText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText telefonoText;
+
+        /// <summary>
         /// passwordText control.
         /// </summary>
         /// <remarks>
@@ -76,15 +85,6 @@ namespace CuentasPorCobrar
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword passwordText;
-
-        /// <summary>
-        /// repeatPasswordText control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputPassword repeatPasswordText;
 
         /// <summary>
         /// btnRegistroUsuario control.

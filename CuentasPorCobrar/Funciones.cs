@@ -33,5 +33,57 @@ namespace CuentasPorCobrar
             return dt;
         }
 
+        public static Boolean InsertData(string tabla, string parametros, string values)
+        {
+            try
+            {
+                string query = @"INSERT INTO " + tabla + "(" + parametros + ") VALUES(" + values + ")";
+                MySql.Data.MySqlClient.MySqlCommand cmd;
+                MySqlConnection conn = new MySqlConnection(connectionString);
+                conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+                conn.Open();
+
+                cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+                var result = cmd.ExecuteNonQuery();
+                if (result != 1)
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            return true;
+        }
+        public static Boolean UpdateData(string tabla, string camposValues, string where)
+        {
+            try
+            {
+                string query = @"UPDATE " + tabla + " SET "+ camposValues+" WHERE "+where+"";
+                MySql.Data.MySqlClient.MySqlCommand cmd;
+                MySqlConnection conn = new MySqlConnection(connectionString);
+                conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+                conn.Open();
+
+                cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+                var result = cmd.ExecuteNonQuery();
+                if (result != 1)
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            return true;
+        }
     }
 }
