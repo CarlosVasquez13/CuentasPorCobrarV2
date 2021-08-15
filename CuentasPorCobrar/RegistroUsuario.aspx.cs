@@ -20,25 +20,25 @@ namespace CuentasPorCobrar
             string segundoApellido = segundoApellidoText.Value;
             string nombreUsuario = nombreUsuarioText.Value;
             string correo = correoText.Value;
+            string telefono = telefonoText.Value;
             string password = passwordText.Value;
-            string repeatPassword = repeatPasswordText.Value;
             //Aqui se formara la query y se registrara el usuario
             try
             {
-                string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
-                conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-                conn.Open();
+                //string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
+                //conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+                //conn.Open();
 
-                query = @"INSERT INTO usuarios(P_Nombre, S_Nombre, P_Apellido, S_Apellido, Nombre_Usuario,
-                    Correo, Contrasenia)
-                    VALUES('" + primerNombre + "','" + segundoNombre + "','" + primerApellido + "','" + segundoApellido + "','" + nombreUsuario + "','" + correo + "','" + password + "');";
-
-                cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
-                var result = cmd.ExecuteNonQuery();
-
+                query = @"INSERT INTO agente
+                (P_Nombre, S_Nombre, P_Apellido, S_Apellido, Nombre_Usuario, Correo, Contrasenia, Telefono, Sucursales_Id)
+                VALUES("+primerNombreText+", "+segundoNombreText+", "+primerApellidoText+", "+segundoApellidoText+", "+nombreUsuarioText+", "+correoText+", "+passwordText+", "+telefonoText+ ", 2);";
+                //cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+                //var result = cmd.ExecuteNonQuery();
                 //si result == 1 se resgitro el usuario, falla cuando es 0
-
-                conn.Close();
+                //conn.Close();
+                string parametros = "P_Nombre, S_Nombre, P_Apellido, S_Apellido, Nombre_Usuario, Correo, Contrasenia, Telefono, Sucursales_Id";
+                string values = "'" + primerNombre + "', '" + segundoNombre + "', '" + primerApellido + "', '" + segundoApellido + "', '" + nombreUsuario + "', '" + correo + "', '" + password + "', '" + telefono + "', 2";
+                var resultado = Funciones.InsertData("Agente",parametros, values);
             }
             catch (Exception ex)
             {
