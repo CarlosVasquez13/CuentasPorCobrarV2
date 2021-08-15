@@ -342,6 +342,7 @@
     <Compile Include="FormatoAUsar.aspx.designer.cs">
       <DependentUpon>FormatoAUsar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Funciones.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

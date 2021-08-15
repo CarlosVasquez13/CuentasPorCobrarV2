@@ -13,32 +13,38 @@ namespace CuentasPorCobrar
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            PruebaConsulta();
+            ObtenerAgentes();
+        }
+
+        private void ObtenerAgentes()
+        {
+            string query = @"SELECT Id_Agente AS ID, CONCAT(P_Nombre, ' ', S_Nombre) AS Nombre, CONCAT(P_Apellido, ' ', S_Apellido) AS Apellido,
+                            Nombre_Usuario AS Usuario, Correo, Fecha_Creado AS 'F.Creado', Activo FROM agente;";
+            
+            DataTable dt = Funciones.GetTable(query, 1);
+
+            GridUsuarios.DataSource = dt;
+            GridUsuarios.DataBind();
 
         }
 
-
         private void PruebaConsulta()
         {
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
-            string query = @"SELECT Id_Usuarios AS ID, CONCAT(P_Nombre, ' ', S_Nombre) AS Nombre, CONCAT(P_Apellido, ' ', S_Apellido) AS Apellido,
-                            Nombre_Usuario AS Usuario, Correo, Fecha_Creado AS 'Fecha Creado', Activo  FROM usuarios;";
-            //conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            //conn.Open();
+            string query = @"SELECT Id_Agente AS ID, CONCAT(P_Nombre, ' ', S_Nombre) AS Nombre, CONCAT(P_Apellido, ' ', S_Apellido) AS Apellido,
+                            Nombre_Usuario AS Usuario, Correo, Fecha_Creado AS 'F.Creado', Activo FROM agente;";
+            //para obtener la cadena de conexion si se ocupa
+            //string test = Funciones.GetConenntionString();
+            
+            //Obtener la data ya en una tabla, parametros query de la data a obtener y el Id del agente
+            DataTable dt = Funciones.GetTable(query, 1);
 
-
-            //cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
-
-            MySqlConnection con = new MySqlConnection(connectionString);
-            MySqlCommand cmd = new MySqlCommand(query);
-
-            MySqlDataAdapter da = new MySqlDataAdapter();
-            cmd.Connection = con;
-            da.SelectCommand = cmd;
-            DataTable dt = new DataTable();
-            da.Fill(dt);
+            //asignar la data al gridView
             GridUsuarios.DataSource = dt;
             GridUsuarios.DataBind();
+           
+            
+            //GridView1.DataSource = dt;
+            //GridView1.DataBind();
         }
     }
 }
