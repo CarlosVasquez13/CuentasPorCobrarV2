@@ -68,7 +68,8 @@
            
             <div class="col-lg-4">
                 <label for="inputEmail4">Seleccione Pais </label>
-                <asp:DropDownList ID="ListaPais" runat="server" AutoPostBack="True"></asp:DropDownList>
+                 <div class="w-100 mt-2 "></div>
+                <asp:DropDownList ID="ListaPais" runat="server" AutoPostBack="True" ></asp:DropDownList>
                 <div class="w-100 mt-2 "></div>
                 
             </div>
