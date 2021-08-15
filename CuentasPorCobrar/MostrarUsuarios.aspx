@@ -12,6 +12,7 @@
     <div>
     <asp:GridView
         ID="GridUsuarios" runat="server" CssClass="table table-striped">
+        
       <%--  <Columns>
             <asp:BoundField DataField="Id_Usuarios" AccessibleHeaderText="ID" />
             <asp:BoundField DataField="P_Nombre" AccessibleHeaderText="Nombre" />
@@ -24,5 +25,18 @@
 
     </asp:GridView>
     </div>
+    
+  <%--  <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false">
+        
+        <Columns>
+            <asp:BoundField ItemStyle-Width="150px" DataField="ID" HeaderText="Customer ID" />
+            <asp:BoundField ItemStyle-Width="150px" DataField="Nombre" HeaderText="Customer ID" />
+            <asp:BoundField ItemStyle-Width="150px" DataField="Apellido" HeaderText="Customer ID" />
+            <asp:BoundField ItemStyle-Width="150px" DataField="Usuario" HeaderText="Customer ID" />
+            <asp:BoundField ItemStyle-Width="150px" DataField="Correo" HeaderText="Customer ID" />
+            <asp:BoundField ItemStyle-Width="150px" DataField="F.Creado" HeaderText="Customer ID" />
+            <asp:BoundField ItemStyle-Width="150px" DataField="Activo" HeaderText="Customer ID" />
+        </Columns>
+    </asp:GridView>--%>
 
 </asp:Content>
