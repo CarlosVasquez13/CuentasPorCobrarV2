@@ -24,23 +24,27 @@ namespace CuentasPorCobrar
         private void DropListPais()
         {
 
-            string mysqlConnString = "Data Source=Localhost;Database=example;User Id=root; password='Graduacion12'";
+            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
+            string query = @"SELECT Nombre AS ID FROM pais;";
 
-            using (MySqlConnection cn= new MySqlConnection(mysqlConnString))
-            {
-                MySqlDataAdapter adp = new MySqlDataAdapter("SELECT pais.Nombre  " +
-                    "FROM departamento, pais WHERE departamento.Id_Pais = pais.Id_Pais;", cn);
-                DataTable dt = new DataTable();
-                int v = adp.Fill(dt);
+
+            MySqlConnection cn = new MySqlConnection(connectionString);
+            MySqlCommand cmd = new MySqlCommand(query);
+
+            MySqlDataAdapter adp = new MySqlDataAdapter();
+            cmd.Connection = cn;
+            adp.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+                adp.Fill(dt);
                 if (dt.Rows.Count > 0)
                 {
                     ListaPais.DataSource = dt;
-                    ListaPais.DataTextField = "Pais";
+                    //ListaPais.DataTextField = "Pais";
                     ListaPais.DataValueField = "ID";
                     ListaPais.DataBind();
 
                 }
-            }
+            
 
         }
 
