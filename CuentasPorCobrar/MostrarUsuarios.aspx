@@ -37,6 +37,6 @@
             <asp:BoundField ItemStyle-Width="150px" DataField="F.Creado" HeaderText="Customer ID" />
             <asp:BoundField ItemStyle-Width="150px" DataField="Activo" HeaderText="Customer ID" />
         </Columns>
-    </asp:GridView>--%>
+    </asp:GridView>--%>       
 
 </asp:Content>
