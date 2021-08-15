@@ -70,16 +70,7 @@
                 <label for="inputEmail4">Seleccione Pais </label>
                 <asp:DropDownList ID="ListaPais" runat="server" AutoPostBack="True"></asp:DropDownList>
                 <div class="w-100 mt-2 "></div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownSelPaisPMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Seleccione Pais</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownSelPaisPMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                    </div>
-                </div>
+                
             </div>
             <div class="w-100 mt-2 "></div> 
             <button type="button" class="btn btn-primary">Guardar</button>
