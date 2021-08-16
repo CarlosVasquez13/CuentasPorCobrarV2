@@ -20,19 +20,22 @@ namespace CuentasPorCobrar
         {
             string usuario = Request.Form["usuarioText"];
             string password = Request.Form["passwordText"];
+            var resultado = Funciones.Login(usuario, password);
+            //string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
+            //string query = "SELECT Id_Usuarios FROM usuarios WHERE Nombre_Usuario = '"+usuarioText.Value+"' AND Contrasenia = '"+password+"'";
+            //conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
 
-            string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuentasPorCobrarDB"].ToString();
-            string query = "SELECT Id_Usuarios FROM usuarios WHERE Nombre_Usuario = '"+usuarioText.Value+"' AND Contrasenia = '"+password+"'";
-            conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            //conn.Open();
 
-            conn.Open();
+            //cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
+            //var value = cmd.ExecuteScalar();
+            //conn.Close();
 
-            cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn);
-            var value = cmd.ExecuteScalar();
-            conn.Close();
-
-            if (value != null)
+            if (resultado != null)
             {
+                Session["name"] = usuario;
+                Session["ID"] = resultado.ToString();
+                Funciones.setUserCredentials(resultado.ToString(), usuario);
                 Response.Redirect("~/Default.aspx");
             }
             //Acciones

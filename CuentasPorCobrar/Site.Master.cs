@@ -11,7 +11,24 @@ namespace CuentasPorCobrar
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            ValidarSesion();
+        }
+        protected void ValidarSesion()
+        {
+            try
+            {
+                var name = Session["name"].ToString();
+                var userId = Session["ID"].ToString();
+                if (userId == null)
+                {
+                    Response.Redirect("~/Login.aspx");
+                }
 
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("~/Login.aspx");
+            }
         }
     }
 }

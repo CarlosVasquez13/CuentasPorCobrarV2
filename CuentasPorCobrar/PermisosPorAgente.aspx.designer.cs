@@ -33,6 +33,33 @@ namespace CuentasPorCobrar
         protected global::System.Web.UI.WebControls.DropDownList DropDownListPermisos;
 
         /// <summary>
+        /// btnAgregarPermiso control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlButton btnAgregarPermiso;
+
+        /// <summary>
+        /// permisosAgenteDiv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl permisosAgenteDiv;
+
+        /// <summary>
+        /// alertaMensaje control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl alertaMensaje;
+
+        /// <summary>
         /// GridPermisosAgente control.
         /// </summary>
         /// <remarks>

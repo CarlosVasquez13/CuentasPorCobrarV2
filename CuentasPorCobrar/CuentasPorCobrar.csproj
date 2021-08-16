@@ -160,6 +160,7 @@
     <Content Include="Content\Login.css" />
     <Content Include="Content\sidebar.estilos.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CrearPermisos.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="EditarUsuario.aspx" />
     <Content Include="favicon.ico" />
@@ -321,6 +322,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CrearPermisos.aspx.cs">
+      <DependentUpon>CrearPermisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrearPermisos.aspx.designer.cs">
+      <DependentUpon>CrearPermisos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
